@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <style>
+        label,
+        input,
+        textarea,
+        select,
+        button {
+            display: block;
+        }
+        a {
+            text-decoration: none;
+        }
+        button{
+            border: solid 1px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="title"> Title </label> <input type="text"> <br>
+        <label for="description">Description</label> <textarea name="description" id="" cols="30"
+            rows="5"></textarea><br>
+        <label for="catagory">Catagory</label> <input type="text"><br>
+        <label for="prio-level">Priority Level</label> <select name="prio-level" id="prio-level">
+            <option value="op0" disabled selected>Select an item</option>
+            <option value="op1">Low</option>
+            <option value="op2">Medium</option>
+            <option value="op3">High</option>
+        </select><br>
+        <label for="proge-level">Progress Level</label> <select name="proge-level" id="proge-level">
+            <option value="op0" disabled selected>Select an item</option>
+            <option value="op1">Completed</option>
+            <option value="op2">Pending</option>
+        </select> <br>
+        <button>Submit</button> <br>
+        <button><a href="task.html">Check my task table</a></button>
+    </form>
+</body>
+
+</html>
